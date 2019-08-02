@@ -1,0 +1,291 @@
+/* Home Page */
+
+html {
+    scroll-behavior: smooth
+}
+
+body {
+    margin: 0px;
+    padding: 0px;
+}
+
+a {
+    text-decoration: none;
+}
+
+#top {
+    position: absolute;
+    top: 0px;
+    color: white;
+}
+
+.navbar {
+    position: fixed;
+    width: 100%;
+    height: 60px;
+    background-color: transparent;
+    z-index: 20;
+    text-align: left;
+}
+
+.menu-icon {
+    border-radius: 50%;
+    padding: 5px;
+    background-color: white;
+    box-shadow: 2px 2px 10px rgba(0, 0, 0, 0.233);
+    position: absolute;
+    right:18px;
+    top: 8px;
+    height: 50px;
+    width: 50px;
+    text-align: center;
+}
+
+.menu-icon-black {
+    position: absolute;
+    height: 35px;
+    width: 35px;
+    z-index: 20;
+    right: 30px;
+    top: 20px;
+}
+
+.menu-icon-orange {
+    position: absolute;
+    height: 35px;
+    width: 35px;
+    overflow: hidden;
+    right: 30px;
+    top: 20px;
+}
+
+.menu-icon-black:hover {
+    opacity: 0;
+}
+
+.logo {
+    font-family: Nunito;
+    display: flex;
+    color: #FFA800;
+    font-size: 2em;
+    margin-top: 10px;
+    margin-left: 10px;
+    border-radius: 50%;
+    background-color: white;
+    width: 60px;
+    height: 60px;
+    align-items: center;
+    justify-content: center;
+    box-shadow: 2px 2px 10px rgba(0, 0, 0, 0.233);
+}
+
+.logo:hover {
+    color: white;
+    background-color: #FFA800;
+}
+
+.logo:active {
+    transition: ease-in-out all 200ms;
+    transform: translateX(2px) translateY(2px);
+    box-shadow: none;
+}
+
+.name {
+    position: relative;
+    padding-top: 10%;
+    text-align: center;
+    font-family: Nunito;
+    font-size: 3em;
+}
+
+.fullname {
+    font-weight: 400;
+}
+
+.title-cont {
+    font-family: Raleway;
+    font-size: 4em;
+    position: relative;
+    padding-top: 15%;
+    text-align: center;
+    margin-bottom: 50%;
+}
+
+.title {
+    font-weight: 300;
+    transition: ease-in-out all 250ms;
+}
+
+.title:hover {
+    font-size: 250%; 
+   
+}
+
+/* Down Arrow */
+
+.arrow {
+    cursor: pointer;
+    height: 80px;
+    margin-left: 50%;
+    margin-bottom: 5px;
+    margin-top: 50px;
+    transform: translateX(-50%) translateY(-50%) rotate(90deg);
+    transition: transform .1s;
+    width: 54px;
+}
+.arrow-top, .arrow-bottom {
+    background-color: black;
+    height: 4px;
+    left: -5px;
+    position: absolute;
+    top: 50%;
+    width: 100%;
+}
+.arrow-top:after, .arrow-bottom:after {
+    background-color: #FFA800;
+    content: '';
+    height: 100%;
+    position: absolute;
+    top: 0;
+    transition: all 0.15s;
+}
+.arrow-top {
+    transform: rotate(45deg);
+    transform-origin: bottom right;
+}
+.arrow-top:after {
+    left: 100%;
+    right: 0;
+    transition-delay: 0s;
+}
+.arrow-bottom {
+    transform: rotate(-45deg);
+    transform-origin: top right;
+}
+.arrow-bottom:after {
+    left: 0;
+    right: 100%;
+    transition-delay: 0.15s;
+}
+.arrow:hover .arrow-top:after {
+    left: 0;
+    transition-delay: 0.15s;
+}
+.arrow:hover .arrow-bottom:after {
+    right: 0;
+    transition-delay: 0s;
+}
+.arrow:active {
+    transform: translateX(-50%) translateY(-50%) rotate(90deg) scale(0.9);
+}
+
+/* shortcut boxes */
+.shortcuts {
+    display: flex;
+    align-items: center;
+    text-align: center;
+    margin-left: 50px;
+    margin-right: 50px;
+}
+
+.button {
+    text-decoration: none;
+    color: black
+}
+
+.box {
+    margin: 20px;
+    text-align: left;
+    width: 300px;
+    height: 250px;
+    border: 2px solid black;
+    box-shadow: 3px 3px 3px rgba(0, 0, 0, 0.295);
+    border-radius: 8px;
+}
+
+.box1 {
+    background-size: 200%;
+}
+
+.box:hover {
+    transition: .2s;
+    transform: translateX(3px) translateY(3px);
+    box-shadow: none;
+}
+
+.box:active {
+    transition: .2s;
+    border: 2px solid #FFA800;
+}
+
+.page-title {
+    margin-left: 20px;
+    font-family: Raleway;
+    font-weight: 300;
+}
+
+.page-desc {
+    margin-left: 20px;
+    font-family: Nunito;
+}
+
+.divider-line {
+    margin-top: 50px;
+    width: 100%;
+    height: 2px;
+    background-color: black;
+}
+
+.about {
+    margin-left: 200px;
+    margin-top: 150px;
+    font-family: Nunito;
+}
+
+.about-me {
+    font-size: 3em;
+    font-weight: 300;
+    margin-bottom: 10px;
+}
+
+.about-line {
+    width: 500px;
+    height: 2px;
+    background-color: black;
+}
+
+.about-text {
+    font-size: 1.5em;
+    height: 600px;
+    margin-left: 60px;
+    margin-top: 40px;
+}
+
+footer {
+    height: 60px;
+    width: 100%;
+    position: absolute;
+    border-top: 2px solid black;
+    text-align: center;
+}
+
+.up-arrow {
+    position: absolute;
+    margin-top: 12px;
+    max-height: 30px;
+    max-width: 30px;
+}
+
+.black {
+    z-index: 3;
+}
+
+.orange {
+    opacity: 0;
+    z-index: 4;
+}
+
+.orange:hover {
+    opacity: 1;
+    transition: .2s;
+}
