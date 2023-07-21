@@ -7,6 +7,7 @@ html {
 body {
     margin: 0px;
     padding: 0px;
+    background-color: #282828;
 }
 
 a {
@@ -28,82 +29,63 @@ a {
     text-align: left;
 }
 
-.menu-icon {
-    border-radius: 50%;
-    padding: 5px;
-    background-color: white;
-    box-shadow: 2px 2px 10px rgba(0, 0, 0, 0.233);
-    position: absolute;
-    right:18px;
-    top: 8px;
-    height: 50px;
-    width: 50px;
-    text-align: center;
-}
-
-.menu-icon-black {
-    position: absolute;
-    height: 35px;
-    width: 35px;
-    z-index: 20;
-    right: 30px;
-    top: 20px;
-}
-
-.menu-icon-orange {
-    position: absolute;
-    height: 35px;
-    width: 35px;
-    overflow: hidden;
-    right: 30px;
-    top: 20px;
-}
-
-.menu-icon-black:hover {
-    opacity: 0;
-}
-
-.logo {
-    font-family: Nunito;
-    display: flex;
-    color: #FFA800;
-    font-size: 2em;
+.menu {
     margin-top: 10px;
-    margin-left: 10px;
-    border-radius: 50%;
-    background-color: white;
-    width: 60px;
-    height: 60px;
-    align-items: center;
-    justify-content: center;
-    box-shadow: 2px 2px 10px rgba(0, 0, 0, 0.233);
+    margin-left: 15px;
+    width: 65px;
+    height: 65px;
 }
 
-.logo:hover {
+.menu:hover {
     color: white;
     background-color: #FFA800;
 }
 
-.logo:active {
+.menu:active {
     transition: ease-in-out all 200ms;
     transform: translateX(2px) translateY(2px);
     box-shadow: none;
 }
 
 .name {
-    position: relative;
-    padding-top: 10%;
-    text-align: center;
-    font-family: Nunito;
-    font-size: 3em;
+    padding-top: 140px;
+    padding-bottom: 20px;
+}
+
+#first {
+    color: #FFA800;
+    margin-right: 130px;
+}
+
+#second {
+    color: #282828;
+    -webkit-text-stroke: 2px #FFFFFF;
+    margin-left: 130px;
+}
+
+#third {
+    color: #000000;
+    margin-right: 130px;
+}
+
+#fourth {
+    color: #282828;
+    -webkit-text-stroke: 2px #FFA800;
+    margin-left: 130px;
 }
 
 .fullname {
+    text-align: center;
+    font-family: Inter;
+    font-size: 128px;
+    font-style: italic;
     font-weight: 400;
+    line-height: 50px;
+    letter-spacing: 25.6px;
 }
 
 .title-cont {
-    font-family: Raleway;
+    font-family: Inter;
     font-size: 4em;
     position: relative;
     padding-top: 15%;
@@ -186,6 +168,7 @@ a {
     text-align: center;
     margin-left: 50px;
     margin-right: 50px;
+    padding-top: 50px;
 }
 
 .button {
@@ -220,45 +203,76 @@ a {
 
 .page-title {
     margin-left: 20px;
-    font-family: Raleway;
+    font-family: Inter;
     font-weight: 300;
 }
 
 .page-desc {
     margin-left: 20px;
-    font-family: Nunito;
+    font-family: Inter;
 }
 
-.divider-line {
-    margin-top: 50px;
-    width: 100%;
-    height: 2px;
-    background-color: black;
-}
 
-.about {
-    margin-left: 200px;
+.intro {
+    margin: auto;
+    width: 1236px;
+    height: 188px;
     margin-top: 150px;
-    font-family: Nunito;
+    margin-bottom: 300px;
 }
 
-.about-me {
-    font-size: 3em;
-    font-weight: 300;
-    margin-bottom: 10px;
+.intro-text {
+    color: #FFF;
+    text-align: center;
+    font-family: Inter;
+    font-size: 48px;
+    font-style: normal;
+    font-weight: 500;
+    line-height: normal;
+    letter-spacing: -0.96px;
 }
 
-.about-line {
-    width: 500px;
-    height: 2px;
-    background-color: black;
+#aboutme{
+    margin: auto;
+    width: 1153px; 
+    margin-bottom: 150px;
 }
 
-.about-text {
-    font-size: 1.5em;
-    height: 600px;
-    margin-left: 60px;
-    margin-top: 40px;
+#can-do {
+    margin: auto;
+    width: 1153px; 
+    display: flex;
+}
+
+h3 {
+    color: #FFA800;
+    font-family: Inter;
+    font-size: 40px;
+    font-style: normal;
+    font-weight: 500;
+    line-height: normal;
+    letter-spacing: -0.8px;
+}
+
+p {
+    color: #FFF;
+    font-family: Inter;
+    font-size: 24px;
+    font-style: normal;
+    font-weight: 500;
+    line-height: 167.523%; /* 40.205px */
+    letter-spacing: -0.6px;
+}
+
+li {
+    color: #FFF;
+    font-family: Inter;
+    font-size: 24px;
+    font-style: normal;
+    font-weight: 500;
+    line-height: 167.523%; /* 40.205px */
+    letter-spacing: -0.6px;
+    list-style: none;
 }
 
 footer {
@@ -267,25 +281,4 @@ footer {
     position: absolute;
     border-top: 2px solid black;
     text-align: center;
-}
-
-.up-arrow {
-    position: absolute;
-    margin-top: 12px;
-    max-height: 30px;
-    max-width: 30px;
-}
-
-.black {
-    z-index: 3;
-}
-
-.orange {
-    opacity: 0;
-    z-index: 4;
-}
-
-.orange:hover {
-    opacity: 1;
-    transition: .2s;
 }
